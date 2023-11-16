@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.navigasi {
+    height: 80px;
+}
+
+.navigasi ul {
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.navigasi li {
+   float: inline-end;
+   line-height: 60px;
+}
+
+.navigasi li a {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+
+
+.banner {
+    text-align: center;
+    background-color: rgb(80, 136, 185);
+    width: 100%;
+    height: 300px;
+    line-height: 280px;
+    color: white;
+}
+
+.h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 350px;
+    width: 30%; 
+    background-color: rgb(205, 205, 205);
+}
+
+.container li {
+    list-style: none; 
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.input-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+    border-radius: 8px;
+    right: 20px;  
+}
+
+input {
+    background-color: gainsboro;
+    border-style: none;
+    padding: 8px;
+}
+
+button {
+    background-color: gainsboro;
+    border-style: none;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(201, 77, 77);
+    transition-duration: 1s;
+}
+
+.container form {
+    float: right;
+    margin-top: -20px;
+}
+
+form {
+    padding-top: 60px;
+} 
+
+footer {
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: rgb(80, 136, 185);
+    color: rgb(253, 252, 252);
+}
+
+.tempat{
+    display: flex;
+}
+
+.kotak{
+   height: 350px; 
+   width: 70%;
+   margin-left: 120px;
+}
+
+.content {
+    display: flex;
+}
+
+    </style>
+</head>
+<body>
+    <!-- navigasi -->
+    <div class="body">
+        <nav class="navigasi">
+            <ul>
+                <li><a class="active">beranda</a></li>
+                <li><a class="active">Layanan Kami</a></li>
+                <li><a class="active">Tentang Kami</a></li>
+                <li><a class="active">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+<!-- banner -->
+    <div class="banner">
+            <h4>Selamat Datang di Portal Pendaftaran </h4>
+    </div>
+<!-- sidebar -->
+    <div class="tempat">
+        <div class="container">
+            <ul>
+            <li>Artikel</li>
+            <li>Bantuan</li>
+            <li>Kuesioner</li>
+            <li>Login</li>
+            <li>Register</li>
+            </ul>
+        </div>
+    <!-- input register -->
+        <div class="kotak">
+            <form action="register.html" method="post">
+                <div class="content">
+                    <div class="input-container">
+                        <!-- Input nama depan -->
+                        <label for="name">Nama Depan:</label><br>
+                        <input type="text" id="nama" name="Nama Depan" label="Nama Depan">
+                    </div>
+                    <div class="input-container">
+                        <!-- Input nama belakang -->
+                        <label for="name">Nama Belakang:</label><br>
+                        <input type="text" id="nama" name="Nama Belakang">
+                    </div>
+                    <div class="input-container">
+                        <!-- Input email -->
+                        <label for="name">Alamat Email:</label><br>
+                        <input type="email" id="email" name="Alamat Email"  >
+                    </div>
+                </div>
+                <div class="input-container">
+                    <!-- Input username -->
+                    <label for="name">Username:</label><br>
+                    <input type="text" id="username" name="username" >
+                </div>
+                <div class="content">
+                    <div class="input-container">
+                        <!-- Input kata sandi-->
+                        <label for="name">Kata Sandi:</label><br>
+                        <input type="password" id="password" name="Kata Sandi" >
+                    </div>
+                    <div class="input-container">
+                        <!-- Input konfirmasi kata sandi -->
+                        <label for="name">Konfirmasi Kata Sandi:</label><br>
+                        <input type="password" id="password" name="Konfirmasi Kata Sandi" >
+                    </div>
+                </div>
+                <button type="submit">Reset From</button> 
+                <button type="submit">Submit From</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Copyright NoorAmaliaXIPPLGA</p>
+    </footer>
+</body>
+</html>
